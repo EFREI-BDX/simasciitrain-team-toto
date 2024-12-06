@@ -22,14 +22,15 @@ namespace simasciitrain {
         // getType() // retourne le type de l’element sous forme de string (ex: "marchandise")
         virtual std::string getType() const = 0;
 
-        // print() // permet d’afficher l’element sur un flux de sortie
-        virtual void print(std::ostream &os) const = 0;
-
         // Surcharge de l’operateur <<
         friend std::ostream& operator<<(std::ostream &os, const TrainElement &element) {
             element.print(os);
             return os;
         }
+
+    protected:
+        // print() // permet d’afficher l’element sur un flux de sortie
+        virtual void print(std::ostream &os) const = 0;
     };
 
 }

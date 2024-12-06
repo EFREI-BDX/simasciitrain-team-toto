@@ -43,5 +43,32 @@ int main() {
     Train anotherTrain(&wagons2, gasolineLocomotive);
     std::cout << anotherTrain << std::endl;                //	[###]-[OO]-[@]-[#]-[OOOOO]-[OOOOO]-[OOOOO]-[OOOOO]-[G]>
 
+
+
+
+
+
+
+
+
+
+
+
+    std::cout << "\nApres tout cela une pause brique de lait s'impose" << std::endl;
+    std::cout << "          _____________\n"
+           << "         /            /|\n"
+           << "        /            / |\n"
+           << "       /____________/  |\n"
+           << "       |    LAIT    |  |\n"
+           << "       |   ______   |  |\n"
+           << "       |  |      |  |  |\n"
+           << "       |  | (\\/) |  |  |\n"
+           << "       |  | LAIT |  | /\n"
+           << "       |  | JAD  |  |/\n"
+           << "       |  |______|  |/\n"
+           << "       |____________|\n"
+           << "       /            /\n"
+           << "      /____________/\n";
+
     return 0;
 }

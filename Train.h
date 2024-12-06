@@ -17,12 +17,13 @@ namespace simasciitrain {
         Train(Wagons* wagons, AbstractLocomotive* locomotive);
         ~Train();
 
-        // print() // affiche le train en concatenant l'affichage des wagons et de la locomotive
-        virtual void print(std::ostream &os) const override;
         Wagons* getWagons() const;
 
         // getLocomotive() // retourne le pointeur vers la locomotive
         AbstractLocomotive* getLocomotive() const;
+    protected:
+        // print() // affiche le train en concatenant l'affichage des wagons et de la locomotive
+        void print(std::ostream &os) const override;
 
     private:
         Wagons* wagons;

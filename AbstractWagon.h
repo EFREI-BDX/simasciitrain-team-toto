@@ -18,8 +18,8 @@ namespace simasciitrain {
         AbstractWagon(const TypeWagon& typeWagon);
         virtual ~AbstractWagon();
         virtual void print(std::ostream &os) const = 0;
-        virtual std::string getType() const override;
-        virtual char getSymbol() const override;
+        std::string getType() const override;
+        char getSymbol() const override;
 
         // Surcharge de l'operateur << pour afficher le wagon
         friend std::ostream& operator<<(std::ostream &os, const AbstractWagon &wagon);
